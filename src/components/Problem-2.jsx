@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllContact, getUsContact } from "../features/contactSlice";
+import { getAllContact, getUsContact } from "../redux/features/contactSlice";
 import { useNavigate } from "react-router-dom";
 
 const Problem2 = ({}) => {
