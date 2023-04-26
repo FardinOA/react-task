@@ -28,13 +28,15 @@ const Problem2 = ({}) => {
         } else {
             navigate("/problem-2", { replace: true });
         }
+    }, [modalA]);
 
+    useEffect(() => {
         if (modalB) {
             navigate("/problem-2/us-contact", { replace: true });
         } else {
             navigate("/problem-2", { replace: true });
         }
-    }, [modalA, modalB]);
+    }, [modalB]);
 
     return (
         <div className={`container position-relative  `}>
